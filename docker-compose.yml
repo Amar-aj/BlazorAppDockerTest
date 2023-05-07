@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  blazorappdockertest.server:
+    image: ${DOCKER_REGISTRY-}blazorappdockertestserver
+    build:
+      context: .
+      dockerfile: BlazorAppDockerTest/Server/Dockerfile
